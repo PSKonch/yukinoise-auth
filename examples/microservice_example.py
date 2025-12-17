@@ -9,7 +9,7 @@
 """
 
 from contextlib import asynccontextmanager
-from typing import Annotated, List
+from typing import Annotated
 
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.responses import JSONResponse

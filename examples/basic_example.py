@@ -9,15 +9,17 @@
 
 from contextlib import asynccontextmanager
 from typing import Annotated
-from fastapi import FastAPI, Depends
+
+from fastapi import Depends, FastAPI
+
 from yukinoise_auth import (
     KeycloakSettings,
-    init_auth,
+    Principal,
     get_current_principal,
     get_optional_principal,
-    require_realm_role,
+    init_auth,
     require_any_realm_role,
-    Principal
+    require_realm_role,
 )
 
 
